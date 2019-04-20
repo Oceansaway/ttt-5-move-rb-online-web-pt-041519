@@ -11,6 +11,6 @@ def input_to_index(string)
 string.to_i-1
 end
 
-def valid_move?(board, position)
-  position.to_i.between?(1,9) && !position_taken?(board, position.to_i-1)
+def move(board, location, current_player = "X")
+  board[location.to_i-1] = current_player
 end
