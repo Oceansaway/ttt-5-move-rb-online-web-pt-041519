@@ -11,6 +11,12 @@ def input_to_index(string)
 string.to_i-1
 end
 
-def move(board,index,current_player="X")
-  board[index.to_i-1] = current_player
+def update_array_at_with(array, index, value)
+  array[index]=value
+  return array
+end
+
+# takes the array update from above and turns it into a move on the tic tac toe board
+def move(board, index, char)
+  update_array_at_with(board, index, char)
 end
