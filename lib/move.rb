@@ -21,6 +21,6 @@ def update_array_at_with(array, index, value)
 end
 
 # takes the array update from above and turns it into a move on the tic tac toe board
-def move(board, index, char)
+def move(board, index, char="x")
   update_array_at_with(board, index, char)
 end
